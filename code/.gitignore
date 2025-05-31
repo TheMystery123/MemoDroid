@@ -8,7 +8,6 @@ __pycache__/
 *.pyz
 test.*
 log.*
-screenshots/
 hierarchy_files/
 annotated_images/
 components/
