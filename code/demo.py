@@ -1,5 +1,6 @@
 from src.config.config import ProcessorConfig
 from src.processors.action_processor import ActionHistoryProcessor
+from src.models.models import FunctionSegment, RAGResult
 from pathlib import Path
 import json
 
@@ -56,7 +57,57 @@ def main():
         
         # Process and save results
         processor.process_and_save(actions, screenshots, "app_analysis_result.txt")
-
+        
+        # Build RAG index from processed segments
+        segments_data = []
+        with open("output/segments_data.json", 'r', encoding='utf-8') as f:
+            segments_data = json.load(f)
+            
+        # Convert segments data to FunctionSegment objects
+        segments = []
+        for data in segments_data:
+            segment = FunctionSegment(
+                actions=data['actions'],
+                screenshots=data['screenshots'],
+                func_desc=data['func_desc'],
+                action_detail=data['action_detail'],
+                reasoning=data['reasoning']
+            )
+            segments.append(segment)
+            
+        # Build RAG index
+        processor.rag_processor.build_index(segments)
+        
+        # Example RAG search queries
+        print("\nPerforming RAG searches...")
+        
+        # Text-based search
+        text_results = processor.search_rag(
+            query_text="How to navigate to settings",
+            k=2
+        )
+        print("\nText search results:")
+        for result in text_results:
+            print(f"- {result.segment.func_desc} (Score: {result.similarity_score:.3f})")
+            
+        # Image-based search
+        image_results = processor.search_rag(
+            query_image="data_demo/screenshots/step_1.png",
+            k=2
+        )
+        print("\nImage search results:")
+        for result in image_results:
+            print(f"- {result.segment.func_desc} (Score: {result.similarity_score:.3f})")
+            
+        # Combined search
+        combined_results = processor.search_rag(
+            query_text="How to perform login",
+            query_image="data_demo/screenshots/step_2.png",
+            k=2
+        )
+        print("\nCombined search results:")
+        for result in combined_results:
+            print(f"- {result.segment.func_desc} (Score: {result.similarity_score:.3f})")
 
     except Exception as e:
         print(f"Error occurred during processing: {str(e)}")
