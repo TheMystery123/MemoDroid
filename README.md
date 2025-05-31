@@ -154,5 +154,6 @@ python collect_bugs/merge_and_analysis.py
 python demo.py
 ```
 
-## Data Availability
-The complete dataset of 60 apps used in our experiments is publicly available at: [Google Drive](https://drive.google.com/drive/folders/1x7sDGJ4R_MmR57kVGi64IWekAAxxqbUV?usp=sharing)
+## Memory Pool Data Availability
+
+The complete dataset of 60 apps memory pool used in our experiments is publicly available at: [Google Drive](https://drive.google.com/drive/folders/1x7sDGJ4R_MmR57kVGi64IWekAAxxqbUV?usp=sharing)
