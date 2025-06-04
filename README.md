@@ -39,6 +39,59 @@ Each memory item is encoded using **CLIP-style vision-text encoders** and **grap
 
 ---
 
+## 🎥 Demo Comparisons
+
+Below are visual comparisons between baseline approaches and their MemoDroid-enhanced versions, demonstrating the improved testing capabilities:
+
+<div style="width: 100%; overflow-x: auto;">
+<div style="display: flex; gap: 20px; padding: 20px 0;">
+    <div style="flex: 0 0 auto; text-align: center;">
+        <img src="./assets/1-1.gif" alt="GPTDroid Baseline" width="200"/>
+        <p><em>GPTDroid</em></p>
+    </div>
+    <div style="flex: 0 0 auto; text-align: center;">
+        <img src="./assets/1-2.gif" alt="GPTDroid+MemoDroid" width="200"/>
+        <p><em>GPTDroid+MemoDroid</em></p>
+    </div>
+    <div style="flex: 0 0 auto; text-align: center;">
+        <img src="./assets/2-1.gif" alt="DroidAgent Baseline" width="200"/>
+        <p><em>DroidAgent</em></p>
+    </div>
+    <div style="flex: 0 0 auto; text-align: center;">
+        <img src="./assets/2-2.gif" alt="DroidAgent+MemoDroid" width="200"/>
+        <p><em>DroidAgent+MemoDroid</em></p>
+    </div>
+    <div style="flex: 0 0 auto; text-align: center;">
+        <img src="./assets/3-1.gif" alt="AUITestAgent Baseline" width="200"/>
+        <p><em>AUITestAgent</em></p>
+    </div>
+    <div style="flex: 0 0 auto; text-align: center;">
+        <img src="./assets/3-2.gif" alt="AUITestAgent+MemoDroid" width="200"/>
+        <p><em>AUITestAgent+MemoDroid</em></p>
+    </div>
+    <div style="flex: 0 0 auto; text-align: center;">
+        <img src="./assets/4-1.gif" alt="VisionDroid Baseline" width="200"/>
+        <p><em>VisionDroid</em></p>
+    </div>
+    <div style="flex: 0 0 auto; text-align: center;">
+        <img src="./assets/4-2.gif" alt="VisionDroid+MemoDroid" width="200"/>
+        <p><em>VisionDroid+MemoDroid</em></p>
+    </div>
+    <div style="flex: 0 0 auto; text-align: center;">
+        <img src="./assets/5-1.gif" alt="Guardian Baseline" width="200"/>
+        <p><em>Guardian</em></p>
+    </div>
+    <div style="flex: 0 0 auto; text-align: center;">
+        <img src="./assets/5-2.gif" alt="Guardian+MemoDroid" width="200"/>
+        <p><em>Guardian+MemoDroid</em></p>
+    </div>
+</div>
+</div>
+
+These demos showcase how MemoDroid enhances each baseline approach by leveraging its three-layer memory mechanism to achieve more effective app exploration and testing.
+
+---
+
 # Experiment Results
 
 ## RQ1: Effectiveness Evaluation
