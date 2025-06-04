@@ -41,51 +41,64 @@ Each memory item is encoded using **CLIP-style vision-text encoders** and **grap
 
 ## 🎥 Demo Comparisons
 
-Below are visual comparisons between baseline approaches and their MemoDroid-enhanced versions, demonstrating the improved testing capabilities:
-
-<div style="width: 100%; overflow-x: auto;">
-<div style="display: flex; gap: 20px; padding: 20px 0;">
-    <div style="flex: 0 0 auto; text-align: center;">
+### GPTDroid vs GPTDroid+MemoDroid
+<div style="display: flex; justify-content: space-between;">
+    <div style="flex: 1; text-align: center;">
         <img src="./assets/1-1.gif" alt="GPTDroid Baseline" width="200"/>
-        <p><em>GPTDroid</em></p>
+        <p><em>GPTDroid Baseline</em></p>
     </div>
-    <div style="flex: 0 0 auto; text-align: center;">
+    <div style="flex: 1; text-align: center;">
         <img src="./assets/1-2.gif" alt="GPTDroid+MemoDroid" width="200"/>
         <p><em>GPTDroid+MemoDroid</em></p>
     </div>
-    <div style="flex: 0 0 auto; text-align: center;">
+</div>
+
+### DroidAgent vs DroidAgent+MemoDroid
+<div style="display: flex; justify-content: space-between;">
+    <div style="flex: 1; text-align: center;">
         <img src="./assets/2-1.gif" alt="DroidAgent Baseline" width="200"/>
-        <p><em>DroidAgent</em></p>
+        <p><em>DroidAgent Baseline</em></p>
     </div>
-    <div style="flex: 0 0 auto; text-align: center;">
+    <div style="flex: 1; text-align: center;">
         <img src="./assets/2-2.gif" alt="DroidAgent+MemoDroid" width="200"/>
         <p><em>DroidAgent+MemoDroid</em></p>
     </div>
-    <div style="flex: 0 0 auto; text-align: center;">
+</div>
+
+### AUITestAgent vs AUITestAgent+MemoDroid
+<div style="display: flex; justify-content: space-between;">
+    <div style="flex: 1; text-align: center;">
         <img src="./assets/3-1.gif" alt="AUITestAgent Baseline" width="200"/>
-        <p><em>AUITestAgent</em></p>
+        <p><em>AUITestAgent Baseline</em></p>
     </div>
-    <div style="flex: 0 0 auto; text-align: center;">
+    <div style="flex: 1; text-align: center;">
         <img src="./assets/3-2.gif" alt="AUITestAgent+MemoDroid" width="200"/>
         <p><em>AUITestAgent+MemoDroid</em></p>
     </div>
-    <div style="flex: 0 0 auto; text-align: center;">
+</div>
+
+### VisionDroid vs VisionDroid+MemoDroid
+<div style="display: flex; justify-content: space-between;">
+    <div style="flex: 1; text-align: center;">
         <img src="./assets/4-1.gif" alt="VisionDroid Baseline" width="200"/>
-        <p><em>VisionDroid</em></p>
+        <p><em>VisionDroid Baseline</em></p>
     </div>
-    <div style="flex: 0 0 auto; text-align: center;">
+    <div style="flex: 1; text-align: center;">
         <img src="./assets/4-2.gif" alt="VisionDroid+MemoDroid" width="200"/>
         <p><em>VisionDroid+MemoDroid</em></p>
     </div>
-    <div style="flex: 0 0 auto; text-align: center;">
+</div>
+
+### Guardian vs Guardian+MemoDroid
+<div style="display: flex; justify-content: space-between;">
+    <div style="flex: 1; text-align: center;">
         <img src="./assets/5-1.gif" alt="Guardian Baseline" width="200"/>
-        <p><em>Guardian</em></p>
+        <p><em>Guardian Baseline</em></p>
     </div>
-    <div style="flex: 0 0 auto; text-align: center;">
+    <div style="flex: 1; text-align: center;">
         <img src="./assets/5-2.gif" alt="Guardian+MemoDroid" width="200"/>
         <p><em>Guardian+MemoDroid</em></p>
     </div>
-</div>
 </div>
 
 These demos showcase how MemoDroid enhances each baseline approach by leveraging its three-layer memory mechanism to achieve more effective app exploration and testing.
