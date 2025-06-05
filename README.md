@@ -72,6 +72,8 @@ These demos showcase how MemoDroid enhances each baseline approach by leveraging
 
 # Experiment Results
 
+The APK files for all 60 memory pool apps and 30 test apps used in our experiments can be downloaded from: [Google Drive](https://drive.google.com/drive/folders/1NsunAviTb9xCClY5hBjbxu-3792_C8f-?usp=sharing)
+
 ## RQ1: Effectiveness Evaluation
 Our evaluation on 30 real-world Android apps across 15 categories demonstrates that MemoDroid significantly enhances GUI testing performance across all five baseline approaches:
 
